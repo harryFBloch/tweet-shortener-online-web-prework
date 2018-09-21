@@ -46,14 +46,13 @@ end
 
 def shortened_tweet_truncator(tweet)
   
-  if tweet.length > 140
-    sting = word_substituter(tweet[0...136] + "...")
-    puts string
-    return string
-  else
-    puts selective_tweet_shortener(tweet)
-    return selective_tweet_shortener(tweet)
+truncated_tweet = ""
+  if word_substituter(tweet).length > 140
+     truncated_tweet << word_substituter(tweet)[0..136] + "..."
+   else
+     truncated_tweet << word_substituter(tweet)
   end
+ truncated_tweet
 end
 
 shortened_tweet_truncator("GUISEEEEE this is so fun! I'm tweeting 4 u guys & this tweet is SOOOO long it's gonna b way more than u would think twitter can handle, so shorten it up u know what I mean? I just can never tell how long 2 keep typing!")
