@@ -44,6 +44,6 @@ def bulk_tweet_shortener(tweetArray)
   tweetArray.each {|tweet| puts word_substituter(tweet)}
 end
 
-def shorthand_tweet_truncator(tweet)
+def shortened_tweet_truncator(tweet)
   puts selective_tweet_shortener(tweet)
 end
