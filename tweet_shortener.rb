@@ -45,5 +45,7 @@ def bulk_tweet_shortener(tweetArray)
 end
 
 def shortened_tweet_truncator(tweet)
-  puts selective_tweet_shortener(tweet)
+  tweet = selective_tweet_shortener(tweet)
+  puts tweet
+  tweet
 end
