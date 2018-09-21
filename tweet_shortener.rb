@@ -51,6 +51,7 @@ def shortened_tweet_truncator(tweet)
     puts string
     return string
   else
+    puts selective_tweet_shortener(tweet)
     return selective_tweet_shortener(tweet)
   end
 end
